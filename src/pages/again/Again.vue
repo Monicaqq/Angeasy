@@ -17,7 +17,7 @@ import TestOne from './components/One'
 import TestTwo from './components/Two'
 
 export default {
-    name:'Test',
+    name:'Again',
     data (){
         return {
             cities:{},
@@ -29,10 +29,6 @@ export default {
         TestOne,
         TestTwo,
 
-        // CityHeader,
-        // CitySearch,
-        // CityList,
-        // CityAlphabet
     },
     methods:{
         getCityInfo (){
