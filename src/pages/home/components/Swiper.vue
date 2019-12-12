@@ -6,7 +6,7 @@
             </swiper-slide>
             <!-- 显示轮播图的点 -->
             <div class="swiper-pagination" id="pagination" slot="pagination"></div>
-    </swiper>
+        </swiper>
     </div>
 </template>
 

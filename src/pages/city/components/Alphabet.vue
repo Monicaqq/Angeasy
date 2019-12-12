@@ -2,7 +2,7 @@
     <ul class="list">
         <li class="item" v-for="item of letters" :key="item" :ref="item"
         @click="handleLetterClick" @touchstart="handleTouchStart" 
-        @touchmove='handleTouchStart' @touchend='handleTouchEnd'>
+        @touchmove='handleTouchMove' @touchend='handleTouchEnd'>
             {{item}}
         </li>       
     </ul>
@@ -53,9 +53,7 @@ export default {
                         this.$emit('change',this.letters[index])
                     }
                 },16)       
-                console.log(touchY)
             }
-
         },
         handleTouchEnd (){
             this.touchStatus = false
