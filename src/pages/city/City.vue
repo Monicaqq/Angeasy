@@ -33,7 +33,7 @@ export default {
     methods:{
         getCityInfo (){
             // 发送axios请求
-            axios.get('./api/city.json')
+            axios.get('/api/city.json')
             //返回值是promise，所以用then接收
             .then(this.handleGetCityInfoSucc)
         },

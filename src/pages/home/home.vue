@@ -41,7 +41,8 @@ export default {
     },
     methods: {
         getHomeInfo (){
-            axios.get('./api/index.json?city=' + this.city)
+            // 以api开头，会找到/static/mock下的地址
+            axios.get('/api/index.json?city=' + this.city)
             .then(this.getHomeInfoSucc)
         },
         getHomeInfoSucc (res){

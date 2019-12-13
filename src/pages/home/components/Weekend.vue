@@ -31,7 +31,7 @@ export default {
 <style lang="stylus" scoped>
     @import '~styles/mixins.styl'
     .recommend-title
-        margin-top .2rem
+        // margin-top .2rem
         line-height .8rem
         background #eee
         text-indent .2rem

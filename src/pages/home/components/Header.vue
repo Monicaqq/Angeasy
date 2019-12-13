@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="header-left">
-            <span class="iconfont">&#xe624;</span>
+            <span class="iconfont">&#xe673;</span>
         </div>
         <div class="header-input">
             <span class="iconfont">&#xe632;</span>
@@ -30,6 +30,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+// 在css中引入其他的css,需要加上~
 @import '~styles/varibles.styl'
 .header
     display flex

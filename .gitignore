@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 static/mock
+# 该文件中路径下设置的代码不会提交到git仓库中
 
 # Editor directories and files
 .idea
