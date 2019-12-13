@@ -33,18 +33,21 @@ export default {
     methods:{
         getCityInfo (){
             // 发送axios请求
-            axios.get('/api/city.json')
+            // axios.get('/api/city.json')
             //返回值是promise，所以用then接收
+            // .then(this.handleGetCityInfoSucc)
+
+            axios.get('http://192.168.1.83:8080/test_web/SelectAll2?project_name=小区&ip_address=192&page=1&operation=select')
             .then(this.handleGetCityInfoSucc)
         },
         handleGetCityInfoSucc (res){
             res = res.data
             console.log(res)
-            if(res.ret &&res.data){
-                const data = res.data
-                this.cities = data.cities
-                this.hotCities = data.hotCities
-        }
+        //     if(res.ret &&res.data){
+        //         const data = res.data
+        //         this.cities = data.cities
+        //         this.hotCities = data.hotCities
+        // }
         },
         handleLetterChange(letter){
             this.letter = letter

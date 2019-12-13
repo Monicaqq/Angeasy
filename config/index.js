@@ -13,6 +13,7 @@ module.exports = {
     proxyTable: {
       //请求api时，将api转发到localhost:8080下，并且将路径替换掉
       '/api':{
+        // target:'http://192.168.1.83:8080',
         target:'http://localhost:8080',
         pathRewrite:{
           // 以api开头的，替换的地址是/static/mock文件夹下的地址

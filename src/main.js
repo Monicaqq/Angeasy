@@ -6,6 +6,7 @@ import router from './router'
 import 'styles/reset.css' 
 import 'styles/border.css'
 import fastClick from 'fastclick'
+// 轮播图的功能
 import VueAwesomeSwiper from  'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 import 'styles/border.css'
